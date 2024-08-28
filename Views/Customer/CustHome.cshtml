@@ -1,0 +1,126 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: lightcyan;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+
+
+    section {
+        padding: 40px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #333;
+        font-size: 24px;
+    }
+
+    .card {
+        display: inline-block;
+        width: 300px;
+        margin: 10px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: #4caf50;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+    button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+            footer a:hover {
+                color: #4caf50;
+            }
+</style>
+<body>
+    <h1 style="text-align: center;">Welcome to Customer Portal</h1>
+
+
+    <section>
+        <h2>Bill Payment Remainder</h2>
+
+        <!-- Mobile Bill Payment Card -->
+        <div class="card">
+            <h3>Mobile Bill Payment</h3>
+            <p>Experience the ease of paying your mobile bill through our user-friendly portal.</p>
+            <a href="Mobile" style="text-decoration: none" class="btn btn-primary">Pay Now</a>
+        </div>
+
+        <!-- Electricity Bill Payment Card -->
+        <div class="card">
+            <h3>Electricity Bill Payment</h3>
+            <p>Securely pay your electricity bill online with just a few clicks.</p>          
+            <a href="Electricity" style="text-decoration: none" class="btn btn-primary">Pay Now</a>
+        </div>
+
+    </section>
+</body>

@@ -1,0 +1,81 @@
+﻿@* @model BillingSystem.Models.UpdateViewModel
+@{
+}
+<h1>Edit Details</h1>
+
+<form asp-controller="Customer" asp-action="View" method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly>
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="FName" asp-for="FName" required>
+        <div class="invalid-feedback">
+            Please enter your first name.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="LName" asp-for="LName" required>
+        <div class="invalid-feedback">
+            Please enter your last name.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" asp-for="Gender" id="male" value="male" required>
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" asp-for="Gender" id="female" value="female" required>
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+        </div>
+        <div class="invalid-feedback">
+            Please select your gender.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="City" asp-for="City" required>
+        <div class="invalid-feedback">
+            Please enter your city.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="Phone" asp-for="Phone" pattern="[0-9]{10}" required>
+        <div class="invalid-feedback">
+            Please enter a valid 10-digit phone number.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" asp-for="Email" required>
+        <div class="invalid-feedback">
+            Please enter a valid email address.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="Password" asp-for="Password" required>
+        <div class="invalid-feedback">
+            Please enter a password.
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Customer">Delete</button>
+
+</form> *@

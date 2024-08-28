@@ -1,0 +1,47 @@
+﻿@model List<BillingSystem.Models.Customer>
+@{
+}
+<h1>Details</h1>
+
+<table class="table">
+    <tr>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>NAME</th>
+            <th>SURNAME</th>
+            <th>GENDER</th>
+            <th>CITY</th>
+            <th>EMAIL</th>
+            <th></th>
+
+        </tr>
+
+    </thead>
+    <tbody>
+
+            @foreach (var customer in Model)
+            {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.FName</td>
+                <td>@customer.LName</td>
+                <td>@customer.Gender</td>
+                <td>@customer.City</td>
+                <td>@customer.Email</td>
+                <td><a href="ViewData/@customer.Id" style="text-decoration: none" class="btn btn-primary">View</a></td>
+
+
+            </tr>
+            }
+    </tbody>
+
+
+
+    </tr>
+
+
+
+
+
+</table>

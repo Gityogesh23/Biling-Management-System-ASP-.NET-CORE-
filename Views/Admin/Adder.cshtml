@@ -1,0 +1,32 @@
+﻿@model BillingSystem.Models.AdminModel
+
+@{
+}
+<form method="post" action="Adder">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="name" asp-for="FiName" aria-describedby="emailHelp">
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="name" asp-for="LaName" aria-describedby="emailHelp">
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Employee Id</label>
+        <input type="number" class="form-control" id="name" asp-for="EmployeeId" aria-describedby="emailHelp">
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" asp-for="Email" aria-describedby="emailHelp">
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" asp-for="Password" id="exampleInputPassword1">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
